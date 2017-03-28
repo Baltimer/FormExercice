@@ -1,0 +1,80 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Ejercicio Formulario Prog</title>
+   <style type="text/css">
+      ol, ul { 
+     list-style-type: none;
+      }
+   </style>
+</head>
+
+<body>
+
+<h1>Formulario del sorteo &ldquo;¡Personaliza mis zapatos!&rdquo;</h1>
+
+<p>Quieres cambiar tus viejas zapatillas por unas ForceField? Explícanos el porqué y podrás ser uno de los 10 afortunados ganadores.</p>
+
+<form action="http://www.learningwebdesign.com/contest.php" method="post">
+
+<fieldsset>
+<legend>Información para el sorteo</legend>
+
+<ul>
+<li><label for="form-name">Nombre:</label> <input type="text" name="username" id="form-name"></li>
+<li><label for="form-email">Email:</label> <input type="email" name="emailaddress" id="form-email"></li>
+<li><label for="form-tel">Número de teléfono:</label> <input type="tel" name="telephone" id="form-tel"></li>
+<li><label for="form-story">Mis zapatos están tan viejos...</label><br>
+<textarea name="story" rows="4" cols="60" maxlength="300" id="form-story" placeholder="Máximo 300 caracteres"></textarea></li>
+</ul>
+</fieldset>
+
+<h2>Diseña tus propias ForceFields:</h2>
+
+<fieldset>
+<legend>Diseño personalizado:</legend>
+
+<fieldset>
+<legend>Color <em>(elige uno)</em>:</legend>
+  <ul>
+  <li><label><input type="radio" name="color" value="red"> Rojo</label></li>
+  <li><input type="radio" name="color" value="blue"> Azul</li>
+  <li><input type="radio" name="color" value="black"> Negro</li>
+  <li><input type="radio" name="color" value="silver"> Plata</li>
+  </ul>
+</fieldset>
+
+<fieldset>
+<legend>Características <em>(elige las que quieras)</em></legend>
+  <ul>
+  <li><input type="checkbox" name="features[]" value="laces"> Cordones brillantes</li>
+  <li><input type="checkbox" name="features[]" value="logo" checked> Logo metálico</li>
+  <li><input type="checkbox" name="features[]" value="heels"> Suelas con luces</li>
+  <li><input type="checkbox" name="features[]" value="mp3"> MP3-Activado</li>
+  </ul>
+</fieldset>
+
+<fieldset>
+<legend>Talla</legend>
+<p>Tamaño estándar europeo: <select name="size" size="1">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+</select>
+</p>
+</fieldset>
+
+</fieldset>
+
+<p><input type="submit" value="Personalizalas!">
+<input type="reset"></p>
+</form>
+</body>
+</html>
